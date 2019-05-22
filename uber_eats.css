@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import url(restaurants_styles.css);
+@import url(footer_style.css);
+
+body {
+    margin: 0; 
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+
+/* header */
+/* navigation bar */
+
+.nav {
+    position: relative;
+    width: 100%;
+    height: 72px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.nav__wrapper {
+    position: absolute;
+    display: flex;
+    width: 92%;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 14px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+/* logo */
+
+.nav__logo svg {
+    max-width: 121px;
+    max-height: 13px;
+}
+
+/* form ASAP to location */
+
+.nav__form {
+    display: flex;
+}
+
+.nav__form span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    width: 14px;
+    height: 19px;
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    color: #626262;
+}
+
+.nav__time input {
+    width: 65px;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.nav__form input[value="ASAP"] {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.nav__form input[value="ul. Tarasivska St, 16"] {
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.nav__location input {
+    max-width: 292px;
+    height: 40px;
+    background-image: url(images/Group.svg);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 35px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+/* Sign In + Register */
+
+.nav__registration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__registration a:nth-child(1) {
+    margin-right: 16px;
+    width: 80px;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1D1D1D;
+    text-decoration: none;
+}
+
+.nav__registration a:nth-child(2) {
+    margin-right: 27px;
+    width: 80px;
+    height: 40px;
+    background: #262626;
+    border-radius: 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav__registration a:nth-child(3) {
+    width: 40px;
+}
+
+/* search form */
+
+.search {
+    margin-top: 40px;
+}
+
+.search__wrapper {
+    width: 92%;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border: 1px solid #E0E0E0;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: 1px solid;
+    border-left-style: none;
+}
+
+.search__wrapper input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    background-image: url(images/Shape.svg);
+    background-repeat: no-repeat;
+    background-position: 10px 10px; 
+    padding: 0px 0px 3px 42px;
+    border: none; 
+}
+
+.search__wrapper input[value="Search for restaurant or cuisine"] {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    color: #626262;
+}
+
+.mobile__form {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .nav__wrapper {
+        width: 98%;
+    }
+
+    .search__wrapper {
+        width: 98%;
+    }
+
+    .restaurants__wrapper {
+        width: 98%;  
+    }
+
+    .restaurants__cards {
+        width: 98%;
+    }
+
+    .card {
+        transition: 200ms;
+        width: 45%;
+        height: auto;
+    }
+
+    .footer__wrapper {
+        width: 98%;
+    }
+}
+
+@media (max-width: 726px) {
+    .nav__form {
+        display: none;
+        transition: 200ms;
+    }
+
+    .mobile__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 92%;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        margin-top: 24px;
+    }
+
+    .mobile__form span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        width: 14px;
+        height: 19px;
+        margin-left: 9px;
+        margin-right: 9px;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        color: #626262;
+    }
+
+    .mobile__time input {
+        width: 65px;
+        height: 40px;
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 2px;
+    }
+
+    .mobile__form input[value="ASAP"] {
+        text-align: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .mobile__form input[value="ul. Tarasivska St, 16"] {
+        text-align: left;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    } 
+
+    .mobile__location input {
+        max-width: 292px;
+        height: 40px;
+        background-image: url(images/Group.svg);
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 0px 0px 0px 35px;
+        border: 1px solid #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 2px;
+    }
+
+    .footer__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 92%;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .footer__lang select {
+        width: 173px; 
+    }
+}
+
+@media (max-width: 537px) {
+    .restaurants__cards {
+        justify-content: center;
+    }
+
+    .card {
+        transition: 200ms;
+        width: 90%;
+        height: auto;
+    }
+
+    footer {
+        height: 910px;
+    }
+
+    .footer__wrapper {
+        margin-bottom: 0px;
+    }
+
+    .footer__navigation {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .footer__icons {
+        margin-bottom: 48.2px;
+    }
+
+    .footer__terms {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .footer__terms a {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .nav__registration a:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .nav__registration a:nth-child(3) {
+        display: none;
+    }
+}

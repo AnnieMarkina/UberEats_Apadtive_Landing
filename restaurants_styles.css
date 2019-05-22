@@ -1,0 +1,87 @@
+/* restaurants gallery */
+
+.restaurants__wrapper {
+    width: 92%;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 56px;
+}
+
+.restaurants__wrapper h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 16px;
+}
+
+.restaurants__cards {
+    width: 92%;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.card {
+    width: 30%; 
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.card img {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.card span {
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D1D1D;
+    margin-bottom: 6px;
+
+}
+
+.card p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #626262;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.card p:last-child {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #1D1D1D;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
